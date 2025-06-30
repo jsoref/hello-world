@@ -15,3 +15,7 @@ jobs:
         run: |
           echo "jq version:"
           jq --version
+
+      - name: Check jq package version
+        run: |
+          dpkg -l | grep jq
